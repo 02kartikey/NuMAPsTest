@@ -157,6 +157,7 @@ async function _handleBackupPdf(req, res) {
         requestBody: { name: filename, mimeType: 'application/pdf', parents: [DRIVE_FOLDER_ID] },
         media:       { mimeType: 'application/pdf', body: stream },
         fields:      'id,name',
+        supportsAllDrives: true,
       });
 
       console.log(`[Drive backup] ✅  ${file.data.name} | id=${file.data.id}`);
