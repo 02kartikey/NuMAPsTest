@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js"
   },
-  "type": "commonjs"
-}
-"dependencies": {
-  "googleapis": "^144.0.0"
+  "type": "commonjs",
+  "dependencies": {
+    "googleapis": "^144.0.0"
+  }
 }
